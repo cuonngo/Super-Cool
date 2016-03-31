@@ -1,4 +1,4 @@
-//
+ //
 //  ViewController.swift
 //  SuperCool
 //
@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Logo: UIImageView!
+    @IBOutlet weak var Uncool: UIButton!
+    @IBOutlet weak var Bg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func MakeMeNotSoUNCOOL(sender: AnyObject) {
+        Logo.hidden = false
+        Bg.hidden = false
+        Uncool.hidden = true
+    }
 
 }
 
